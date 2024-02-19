@@ -1,0 +1,2 @@
+PORT=<portnumber>
+MONGO_URI=mongodb+srv://<user>:<pass>@jobcluster.bi1bsfk.mongodb.net/?retryWrites=true&w=majority
