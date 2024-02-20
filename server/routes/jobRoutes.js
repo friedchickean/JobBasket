@@ -1,4 +1,5 @@
 const express = require('express');
+const { createJob } = require('../controllers/jobController');
 
 const router = express.Router();
 
@@ -14,9 +15,7 @@ router.get('/:id', (req, res) => {
 });
 
 // POST new job
-router.post('/', (req, res) => {
-    res.json({mssg: 'POST a job'});
-});
+router.post('/', createJob);
 
 // DELETE a job
 router.delete('/:id', (req, res) => {
